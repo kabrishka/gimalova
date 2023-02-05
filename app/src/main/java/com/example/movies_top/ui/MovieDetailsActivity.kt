@@ -1,6 +1,5 @@
 package com.example.movies_top.ui
 
-import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -19,7 +18,7 @@ import retrofit2.Response
 
 class MovieDetailsActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityMovieDetailsBinding
+    private lateinit var binding: ActivityMovieDetailsBinding
 
     private val api: ApiServices by lazy {
         ApiClient().getClientV22().create(ApiServices::class.java)
@@ -55,7 +54,7 @@ class MovieDetailsActivity : AppCompatActivity() {
     }
 
 
-    fun getMovieInfo(id: Long) {
+    private fun getMovieInfo(id: Long) {
         binding.errorMsg.visibility = View.GONE
 
         binding.apply {

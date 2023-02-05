@@ -34,7 +34,7 @@ class MovieSearchActivity : AppCompatActivity() {
         binding.errorMsg.visibility = View.GONE
         binding.prgBarMovies.visibility = View.GONE
 
-        binding.etMovie.setOnEditorActionListener { textView, actionId, keyEvent ->
+        binding.etMovie.setOnEditorActionListener { _, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_SEARCH) {
                 return@setOnEditorActionListener getMovies()
             }

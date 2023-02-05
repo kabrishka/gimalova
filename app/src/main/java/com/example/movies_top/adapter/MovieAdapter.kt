@@ -2,7 +2,6 @@ package com.example.movies_top.adapter
 
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
@@ -13,7 +12,6 @@ import com.example.movies_top.ui.MovieDetailsActivity
 import com.example.movies_top.databinding.ItemMoviesBinding
 import com.example.movies_top.model.MoviesTopList
 import com.example.movies_top.ui.MainActivity
-import com.example.movies_top.ui.TAG
 
 class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
@@ -51,7 +49,7 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
                 root.setOnClickListener {
                     val intent = Intent(context, MovieDetailsActivity::class.java)
 
-                    var fromActivityId = if (context is MainActivity) 0 else 1
+                    val fromActivityId = if (context is MainActivity) 0 else 1
                     intent.putExtra("fromActivity", fromActivityId)
                     intent.putExtra("filmId", item.filmId)
                     context.startActivity(intent)

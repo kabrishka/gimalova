@@ -16,7 +16,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-val TAG = "MyTag"
+const val TAG = "MyTag"
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,7 +38,6 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnSearch.setOnClickListener{
             startActivity(Intent(this, MovieSearchActivity::class.java))
-            finish()
         }
     }
 
