@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="monte_carlo">#86cdbc</color>
+    <color name="monte_carlo_transparent">#9986cdbc</color>
+    <color name="fountain_blue">#67bebe</color>
+    <color name="blue_green">#0f94bc</color>
+    <color name="blue_green_transparent">#990f94bc</color>
+    <color name="aqua_island">#afddd4</color>
+    <color name="iceberg">#6ebdd4</color>
+    <color name="saffron_mango">#f9c15d</color>
+    <color name="sunglow">#ffb833</color>
+    <color name="black">#FF000000</color>
+    <color name="black_haze">#f4f8f9</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#6d6d6d</color>
+    <color name="grey_transparent">#886d6d6d</color>
+</resources>
